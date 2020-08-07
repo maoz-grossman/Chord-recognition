@@ -24,7 +24,7 @@ def load_data(data_path):
 X, y = load_data(DATA_PATH)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25)
 
-#Create a knn object
+#Create a knn Classifier
 knn = KNeighborsClassifier(n_neighbors=5)
 
 #Train the model using the training sets

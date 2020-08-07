@@ -25,7 +25,7 @@ def load_data(data_path):
 X, y = load_data(DATA_PATH)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25)
 
-#Create a SVM object
+#Create a SVM Classifier
 svclassifier = SVC(kernel='linear')
 
 #Train the model using the training sets
