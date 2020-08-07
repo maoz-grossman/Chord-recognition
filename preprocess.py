@@ -2,11 +2,11 @@ import json
 import os
 import math
 import librosa
-
+from pitch_class_profiling import PitchClassProfiler
 DATASET_PATH = "jim2012Chords/Guitar_Only"
 JSON_PATH = "data.json"
 SAMPLE_RATE = 22050
-TRACK_DURATION = 2 # measured in seconds
+TRACK_DURATION = 1 # measured in seconds
 SAMPLES_PER_TRACK = SAMPLE_RATE * TRACK_DURATION
 
 
@@ -25,7 +25,7 @@ def save_mfcc(dataset_path, json_path, num_mfcc=13, n_fft=2048, hop_length=512, 
     data = {
         "mapping": [],
         "labels": [],
-        "mfcc": []
+        "pitch": []
     }
 
     samples_per_segment = int(SAMPLES_PER_TRACK / num_segments)
@@ -51,7 +51,7 @@ def save_mfcc(dataset_path, json_path, num_mfcc=13, n_fft=2048, hop_length=512, 
 
                 # process all segments of audio file
                 for d in range(num_segments):
-
+                    '''
                     # calculate start and finish sample for current segment
                     start = samples_per_segment * d
                     finish = start + samples_per_segment
@@ -63,9 +63,11 @@ def save_mfcc(dataset_path, json_path, num_mfcc=13, n_fft=2048, hop_length=512, 
 
                     # store only mfcc feature with expected number of vectors
                     if len(mfcc) == num_mfcc_vectors_per_segment:
-                        data["mfcc"].append(mfcc.tolist())
-                        data["labels"].append(i - 1)
-                        print("{}, segment:{}".format(file_path, d + 1))
+                    '''
+                    ptc=PitchClassProfiler(file_path)
+                    data["pitch"].append(ptc.get_profile())
+                    data["labels"].append(i - 1)
+                    print("{}, segment:{}".format(file_path, d + 1))
 
     # save MFCCs to json file
     with open(json_path, "w") as fp:
@@ -73,4 +75,4 @@ def save_mfcc(dataset_path, json_path, num_mfcc=13, n_fft=2048, hop_length=512, 
 
 
 if __name__ == "__main__":
-    save_mfcc(DATASET_PATH, JSON_PATH, num_segments=2)
+    save_mfcc(DATASET_PATH, JSON_PATH, num_segments=1)
