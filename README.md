@@ -1,5 +1,5 @@
 # Chord-recognition
-##Identify guitar chords by machine learning.
+## Identify guitar chords by machine learning.
 
 
 
