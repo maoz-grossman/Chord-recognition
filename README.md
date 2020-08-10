@@ -24,7 +24,7 @@ and in particular to his code [pitch_class_profiling.py](https://github.com/amro
 guitar chords recorded both in the studio and noisy environments. 
 The database contains 2000 chords splitted up in 10 classes, giving up to 200 chords per chord type. 
 The files are stored in raw WAV 16 bits mono 44100Hz format. 
-(from [](https://people.montefiore.uliege.be/josmalskyj/research.php))
+(from https://people.montefiore.uliege.be/josmalskyj/research.php )
 
 <h5>Techniques</h5>
 <h6>Machine learning:</h6> 
