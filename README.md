@@ -62,6 +62,7 @@ They are derived from a type of cepstral representation of the audio clip (a non
 
 <h5>More successful techniques</h5>
 <h6>Harmonic pitch class profiles (HPCP) - </h6>
+
 ***is a group of features that a computer program extracts from an audio signal,
 based on a pitch class profile—a descriptor proposed in the context of a chord recognition system. 
 HPCP are an enhanced pitch distribution feature that are sequences of feature vectors that, 
@@ -70,10 +71,11 @@ Often, the twelve pitch spelling attributes are also referred to as chroma and t
 (https://en.wikipedia.org/wiki/Harmonic_pitch_class_profiles)
 
 
+
 <h5>results</h5>
-On average the best results we got were from the knn algorithm, with an average accuracy of ~96 percent
-Second place went to the SVM algorithm, with an average accuracy of ~95 percent
-Not far from it in third place is  'Decision tree', with ~95 percent accuracy on average
+On average the best results we got were from the knn algorithm, with an average accuracy of ~96 percent.
+Second place went to the SVM algorithm, with an average accuracy of ~95 percent.
+Not far from it in third place is  'Decision tree', with ~95 percent accuracy on average.
 And last but not least, the 'Adaboost' algorithm with ~94 percent accuracy on average.
 
 
