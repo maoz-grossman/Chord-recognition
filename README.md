@@ -47,12 +47,19 @@ The files are stored in raw WAV 16 bits mono 44100Hz format.
 3. [Recurrent neural network](https://en.wikipedia.org/wiki/Recurrent_neural_network)
 
 
+
+
+
+
+
 <h4>Preprocess Techniques:</h4> 
 
 <h5>Less successful techniques </h5>
 <h6>1. Mfcc - </h6>
 ```
+
 _In sound processing, the mel-frequency cepstrum (MFC) is a representation of the short-term power spectrum of a sound, based on a linear cosine transform of a log power spectrum on a nonlinear mel scale of frequency.
 Mel-frequency cepstral coefficients (MFCCs) are coefficients that collectively make up an MFC. They are derived from a type of cepstral representation of the audio clip (a nonlinear "spectrum-of-a-spectrum")._
 (from https://en.wikipedia.org/wiki/Mel-frequency_cepstrum)
+
 ```
