@@ -5,7 +5,7 @@
 
 
 As a final project in the "Machine Learning" course at the university,
-we tried to build a program that could decode chords from songs ,in wav file forma, using machine learning.
+we tried to build a program that could decode chords from songs ,in wav file format,using machine learning.
 namely, given a new chord, or some piece of music, the program will be able to identify the chords being played.
 
 Because sound files are a function that depends on time and changes at any given moment, 
@@ -20,13 +20,13 @@ For the part of converting the files to hpcp we owe our thanks to [Andres Mauric
 and in particular to his code [pitch_class_profiling.py](https://github.com/amrondonp/Chords.py/blob/master/final_project/preprocessing/pitch_class_profiling.py)
 
 
-<h6>Data set description </h6>
+<h4>Data set description </h4>
 guitar chords recorded both in the studio and noisy environments. 
 The database contains 2000 chords splitted up in 10 classes, giving up to 200 chords per chord type. 
 The files are stored in raw WAV 16 bits mono 44100Hz format. 
 (from https://people.montefiore.uliege.be/josmalskyj/research.php )
 
-<h5>Techniques</h5>
+<h4>Techniques</h4>
 <h6>Machine learning:</h6> 
 
 1. [AdaBoost](https://en.wikipedia.org/wiki/AdaBoost)
@@ -47,4 +47,12 @@ The files are stored in raw WAV 16 bits mono 44100Hz format.
 3. [Recurrent neural network](https://en.wikipedia.org/wiki/Recurrent_neural_network)
 
 
+<h4>Preprocess Techniques:</h4> 
 
+<h5>Less successful techniques </h5>
+<h6>1. Mfcc - </h6>
+```
+_In sound processing, the mel-frequency cepstrum (MFC) is a representation of the short-term power spectrum of a sound, based on a linear cosine transform of a log power spectrum on a nonlinear mel scale of frequency.
+Mel-frequency cepstral coefficients (MFCCs) are coefficients that collectively make up an MFC. They are derived from a type of cepstral representation of the audio clip (a nonlinear "spectrum-of-a-spectrum")._
+(from https://en.wikipedia.org/wiki/Mel-frequency_cepstrum)
+```
