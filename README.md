@@ -57,12 +57,20 @@ The files are stored in raw WAV 16 bits mono 44100Hz format.
 <h5>Less successful techniques </h5>
 <h6>1. Mfcc - </h6>
 
-```In sound processing, the mel-frequency cepstrum (MFC) is a representation of the short-term power spectrum of a sound,
+In sound processing, the mel-frequency cepstrum (MFC) is a representation of the short-term power spectrum of a sound,
 based on a linear cosine transform of a log power spectrum on a nonlinear mel scale of frequency.
 Mel-frequency cepstral coefficients (MFCCs) are coefficients that collectively make up an MFC. 
 They are derived from a type of cepstral representation of the audio clip (a nonlinear "spectrum-of-a-spectrum").
 (from https://en.wikipedia.org/wiki/Mel-frequency_cepstrum)
-```
 
+
+<h5>More successful techniques</h5>
+<h6>Harmonic pitch class profiles (HPCP) - </h6>
+is a group of features that a computer program extracts from an audio signal,
+based on a pitch class profile—a descriptor proposed in the context of a chord recognition system. 
+HPCP are an enhanced pitch distribution feature that are sequences of feature vectors that, 
+to a certain extent, describe tonality, measuring the relative intensity of each of the 12 pitch classes of the equal-tempered scale within an analysis frame.
+Often, the twelve pitch spelling attributes are also referred to as chroma and the HPCP features are closely related to what is called chroma features or chromagrams.
+(https://en.wikipedia.org/wiki/Harmonic_pitch_class_profiles)
 
 
