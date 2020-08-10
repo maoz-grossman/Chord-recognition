@@ -28,15 +28,15 @@ The files are stored in raw WAV 16 bits mono 44100Hz format.
 
 <h6>Techniques</h6>
 Machine learning: 
-1.[AdaBoost](https://en.wikipedia.org/wiki/AdaBoost)
-2.[Support vector machine](https://en.wikipedia.org/wiki/Support_vector_machine)
-3.[k-nearest neighbors algorithm](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
-4.[Decision tree](https://en.wikipedia.org/wiki/Decision_tree)
+1. [AdaBoost](https://en.wikipedia.org/wiki/AdaBoost)
+2. [Support vector machine](https://en.wikipedia.org/wiki/Support_vector_machine)
+3. [k-nearest neighbors algorithm](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
+4. [Decision tree](https://en.wikipedia.org/wiki/Decision_tree)
 
 Neuron network (failed):
-1.[Multilayer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)
-2.[Convolutional neural network](https://en.wikipedia.org/wiki/Convolutional_neural_network)
-3.[Recurrent neural network](https://en.wikipedia.org/wiki/Recurrent_neural_network)
+1. [Multilayer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)
+2. [Convolutional neural network](https://en.wikipedia.org/wiki/Convolutional_neural_network)
+3. [Recurrent neural network](https://en.wikipedia.org/wiki/Recurrent_neural_network)
 
 
 
