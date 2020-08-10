@@ -1,5 +1,5 @@
 # Chord-recognition
-Identify guitar chords by machine learning.
+##Identify guitar chords by machine learning.
 
 
 
@@ -18,3 +18,25 @@ Very high-level lessons, that convey the material in a thorough, comprehensive a
 
 For the part of converting the files to hpcp we owe our thanks to [Andres Mauricio Rondon Patiño](https://github.com/amrondonp),
 and in particular to his code [pitch_class_profiling.py](https://github.com/amrondonp/Chords.py/blob/master/final_project/preprocessing/pitch_class_profiling.py)
+
+
+<h6>Data set description </h6>
+guitar chords recorded both in the studio and noisy environments. 
+The database contains 2000 chords splitted up in 10 classes, giving up to 200 chords per chord type. 
+The files are stored in raw WAV 16 bits mono 44100Hz format. 
+(from [](https://people.montefiore.uliege.be/josmalskyj/research.php))
+
+<h6>Techniques</h6>
+Machine learning: 
+1.[AdaBoost](https://en.wikipedia.org/wiki/AdaBoost)
+2.[Support vector machine](https://en.wikipedia.org/wiki/Support_vector_machine)
+3.[k-nearest neighbors algorithm](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
+4.[Decision tree](https://en.wikipedia.org/wiki/Decision_tree)
+
+Neuron network (failed):
+1.[Multilayer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)
+2.[Convolutional neural network](https://en.wikipedia.org/wiki/Convolutional_neural_network)
+3.[Recurrent neural network](https://en.wikipedia.org/wiki/Recurrent_neural_network)
+
+
+
