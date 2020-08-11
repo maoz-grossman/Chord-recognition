@@ -46,4 +46,4 @@ for i in range(len(y_test)):
         err_count+=1
         print("error in:",i," test: ",y_test[i], "pred: ", y_pred[i])
 
-print("number of error: ",err_count, "in ",len(y_test),"in total:",err_count/len(y_test) )
+print("number of errors: ",err_count, "in ",len(y_test),"in total:",err_count/len(y_test) )

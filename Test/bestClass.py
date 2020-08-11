@@ -27,7 +27,7 @@ def load_data(data_path):
     return X, y
 # get train, validation, test splits
 X, y = load_data(DATA_PATH)
-rounds =3
+rounds =100
 knn_accu=0
 dt_accu=0
 ada_accu=0
@@ -65,7 +65,7 @@ for i in range(rounds):
 
 
 print()
-print("knn avarage accuracy: " , knn_accu/rounds)
-print("Decision Tree avarage accuracy: " , dt_accu/rounds)
-print("Adaboost avarage accuracy: " , ada_accu/rounds)
-print("SVM avarage accuracy: " , svm_accu/rounds)
+print("knn average accuracy : " , knn_accu/rounds)
+print("Decision Tree average accuracy: " , dt_accu/rounds)
+print("Adaboost average accuracy: " , ada_accu/rounds)
+print("SVM average accuracy: " , svm_accu/rounds)
