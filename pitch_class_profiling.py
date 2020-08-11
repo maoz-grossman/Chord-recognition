@@ -63,9 +63,6 @@ class PitchClassProfiler():
         pcp_norm = [0 for p in range(12)]
         for p in range(12):
             pcp_norm[p] = (pcp[p] / sum(pcp))
-        #print("finished pcp")
-        #pcp_norm.append(0)
-        #print(type(pcp_norm))
         return list(pcp_norm)
 
     def get_profile(self):
@@ -107,8 +104,3 @@ class LongFileProfiler(PitchClassProfiler):
 
             self.current_pointer += self.window
         return profiles_list
-'''
-ptc=PitchClassProfiler('a1.wav')
-print("i am trinig", ptc.get_profile())
-print(type(ptc.get_profile()))
-'''

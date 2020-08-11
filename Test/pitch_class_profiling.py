@@ -107,8 +107,3 @@ class LongFileProfiler(PitchClassProfiler):
 
             self.current_pointer += self.window
         return profiles_list
-'''
-ptc=PitchClassProfiler('a1.wav')
-print("i am trinig", ptc.get_profile())
-print(type(ptc.get_profile()))
-'''
