@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4258b9ba-4150-43c1-b0a9-725d26da3e46" name="Default Changelist" comment="data set">
-      <change afterPath="$PROJECT_DIR$/CNN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MLP.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RNN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Chord-recognition.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Chord-recognition.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Record.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/SplitAudio.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.RNN">
+  <component name="RunManager" selected="Python.SplitAudio">
     <configuration name="CNN" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Chord-recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,7 +78,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../ML/venv/bin/python" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -116,10 +113,54 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Record" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Chord-recognition" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/Record.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SplitAudio" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Chord-recognition" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/SplitAudio.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.MLP" />
       <item itemvalue="Python.CNN" />
       <item itemvalue="Python.RNN" />
+      <item itemvalue="Python.Record" />
+      <item itemvalue="Python.SplitAudio" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -183,29 +224,49 @@
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="666" y="139" key="#RNN/1920.23.1440.877/0.23.1920.1002@0.23.1920.1002" timestamp="1596514314723" />
+    <state x="666" y="155" key="#SplitAudio" timestamp="1597123821734">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="666" y="155" key="#SplitAudio/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1597123821734" />
     <state x="424" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596514048982">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="424" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.23.1440.822/0.23.1920.1057@0.23.1920.1057" timestamp="1596475788942" />
     <state x="424" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.23.1440.877/0.23.1920.1002@0.23.1920.1002" timestamp="1596514048982" />
-    <state width="1899" height="279" key="GridCell.Tab.0.bottom" timestamp="1596513779071">
-      <screen x="0" y="23" width="1920" height="1002" />
+    <state x="699" y="349" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597123217109">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="699" y="349" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1597123217109" />
+    <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597123230093">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1597123230093" />
+    <state x="666" y="155" key="#record" timestamp="1597123090048">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="666" y="155" key="#record/1920.23.1440.877/0.0.1920.1080@0.0.1920.1080" timestamp="1597123090048" />
+    <state width="1899" height="474" key="GridCell.Tab.0.bottom" timestamp="1597124857569">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="474" key="GridCell.Tab.0.bottom/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1597124857569" />
     <state width="1899" height="128" key="GridCell.Tab.0.bottom/1920.23.1440.822/0.23.1920.1057@0.23.1920.1057" timestamp="1596475811041" />
     <state width="1899" height="279" key="GridCell.Tab.0.bottom/1920.23.1440.877/0.23.1920.1002@0.23.1920.1002" timestamp="1596513779071" />
-    <state width="1899" height="279" key="GridCell.Tab.0.center" timestamp="1596513779070">
-      <screen x="0" y="23" width="1920" height="1002" />
+    <state width="1899" height="474" key="GridCell.Tab.0.center" timestamp="1597124857567">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1899" height="474" key="GridCell.Tab.0.center/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1597124857567" />
     <state width="1899" height="128" key="GridCell.Tab.0.center/1920.23.1440.822/0.23.1920.1057@0.23.1920.1057" timestamp="1596475811038" />
     <state width="1899" height="279" key="GridCell.Tab.0.center/1920.23.1440.877/0.23.1920.1002@0.23.1920.1002" timestamp="1596513779070" />
-    <state width="1899" height="279" key="GridCell.Tab.0.left" timestamp="1596513779070">
-      <screen x="0" y="23" width="1920" height="1002" />
+    <state width="1899" height="474" key="GridCell.Tab.0.left" timestamp="1597124857567">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1899" height="474" key="GridCell.Tab.0.left/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1597124857567" />
     <state width="1899" height="128" key="GridCell.Tab.0.left/1920.23.1440.822/0.23.1920.1057@0.23.1920.1057" timestamp="1596475811037" />
     <state width="1899" height="279" key="GridCell.Tab.0.left/1920.23.1440.877/0.23.1920.1002@0.23.1920.1002" timestamp="1596513779070" />
-    <state width="1899" height="279" key="GridCell.Tab.0.right" timestamp="1596513779071">
-      <screen x="0" y="23" width="1920" height="1002" />
+    <state width="1899" height="474" key="GridCell.Tab.0.right" timestamp="1597124857568">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1899" height="474" key="GridCell.Tab.0.right/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1597124857568" />
     <state width="1899" height="128" key="GridCell.Tab.0.right/1920.23.1440.822/0.23.1920.1057@0.23.1920.1057" timestamp="1596475811039" />
     <state width="1899" height="279" key="GridCell.Tab.0.right/1920.23.1440.877/0.23.1920.1002@0.23.1920.1002" timestamp="1596513779071" />
     <state width="1899" height="336" key="GridCell.Tab.1.bottom" timestamp="1596513175837">
@@ -228,9 +289,11 @@
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="725" y="233" key="RollbackChangesDialog/1920.23.1440.877/0.23.1920.1002@0.23.1920.1002" timestamp="1596512955696" />
-    <state x="469" y="163" key="SettingsEditor" timestamp="1596475184907">
-      <screen x="0" y="23" width="1920" height="1002" />
+    <state x="599" y="190" key="SettingsEditor" timestamp="1597125144641">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="599" y="190" key="SettingsEditor/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1597125144641" />
+    <state x="496" y="335" key="SettingsEditor/1920.23.1440.877/0.0.1920.1080@0.0.1920.1080" timestamp="1597125028636" />
     <state x="469" y="163" key="SettingsEditor/1920.23.1440.877/0.23.1920.1002@0.23.1920.1002" timestamp="1596475184907" />
     <state x="560" y="264" key="Vcs.Push.Dialog.v2" timestamp="1596021522600">
       <screen x="0" y="23" width="1920" height="1002" />
@@ -240,5 +303,9 @@
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="740" y="265" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/1920.23.1440.877/0.23.1920.1002@0.23.1920.1002" timestamp="1596021279531" />
+    <state x="627" y="335" key="git4idea.merge.GitPullDialog" timestamp="1597122965954">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="627" y="335" key="git4idea.merge.GitPullDialog/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1597122965954" />
   </component>
 </project>
