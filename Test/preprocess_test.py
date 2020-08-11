@@ -48,6 +48,8 @@ def save_pitch(dataset_path, json_path):
                 print("{}, segment:{}".format(file_path, 1))
         else:
             print("oups")
+    
+    #Sorting the dictionary
     n = len(data["order"]) 
     for i in range(n-1): 
     # range(n) also work but outer loop will repeat one time more than needed. 
