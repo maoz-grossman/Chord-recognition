@@ -74,9 +74,9 @@ Often, the twelve pitch spelling attributes are also referred to as chroma and t
 
 <h5>results</h5>
 On average the best results we got were from the knn algorithm, with an average accuracy of ~96 percent.
-Second place went to the SVM algorithm, with an average accuracy of ~95 percent.
+Second place went to the 'Adaboost' algorithm, with an average accuracy of ~95 percent.
 Not far from it in third place is  'Decision tree', with ~95 percent accuracy on average.
-And last but not least, the 'Adaboost' algorithm with ~94 percent accuracy on average.
+And last but not least, the SVM algorithm with ~94 percent accuracy on average.
 
 
 
