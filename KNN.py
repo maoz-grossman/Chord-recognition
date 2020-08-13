@@ -25,24 +25,45 @@ X, y = load_data(DATA_PATH)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25)
 
 #Create a knn Classifier
-knn = KNeighborsClassifier(n_neighbors=5)
+knn1 = KNeighborsClassifier(n_neighbors=1)
+knn3 = KNeighborsClassifier(n_neighbors=3)
+knn5 = KNeighborsClassifier(n_neighbors=5)
+knn7 = KNeighborsClassifier(n_neighbors=7)
 
 #Train the model using the training sets
-knn.fit(X_train, y_train)
+knn1.fit(X_train, y_train)
+knn3.fit(X_train, y_train)
+knn5.fit(X_train, y_train)
+knn7.fit(X_train, y_train)
 
 #Predict the response for test dataset
-y_pred = knn.predict(X_test)
+y_pred1 = knn1.predict(X_test)
+y_pred3 = knn3.predict(X_test)
+y_pred5 = knn5.predict(X_test)
+y_pred7 = knn7.predict(X_test)
+
 
 print("test size: ", len(y_test))
 print("train size: ",len(y_train))
 
 # Model Accuracy, how often is the classifier correct?
-print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
+#print("Accuracy:",metrics.accuracy_score(y_test, y_pred3))
+err_count1=0
+err_count3=0
+err_count5=0
+err_count7=0
 
-err_count=0
 for i in range(len(y_test)):
-    if y_test[i]!=y_pred[i]:
-        err_count+=1
-        print("error in:",i," test: ",y_test[i], "pred: ", y_pred[i])
-
-print("number of errors: ",err_count, "in ",len(y_test),"in total:",err_count/len(y_test) )
+    if y_test[i]!=y_pred1[i]:
+        err_count1+=1
+    if y_test[i]!=y_pred3[i]:
+        err_count3+=1
+    if y_test[i]!=y_pred5[i]:
+        err_count5+=1
+    if y_test[i]!=y_pred7[i]:
+        err_count7+=1
+print("~~~Errors Comparison: ~~~")
+print("Number of neighbor= ",1," ,number of errors: ",err_count1 ,", accuracy: ",metrics.accuracy_score(y_test, y_pred1) )
+print("Number of neighbor= ",3," ,number of errors: ",err_count3 ,", accuracy: ",metrics.accuracy_score(y_test, y_pred3) )
+print("Number of neighbor= ",5," ,number of errors: ",err_count5,", accuracy: ",metrics.accuracy_score(y_test, y_pred5) )
+print("Number of neighbor= ",7," ,number of errors: ",err_count7,", accuracy: ",metrics.accuracy_score(y_test, y_pred7) )

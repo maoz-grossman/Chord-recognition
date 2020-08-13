@@ -33,13 +33,14 @@ model1 = KNeighborsClassifier(n_neighbors=5)
 model2=AdaBoostClassifier(n_estimators=200,learning_rate=2)
 model3=DecisionTreeClassifier()
 model4=SVC(kernel='linear')
+model5=SVC(kernel='rbf')
 
 #Train the model using the training sets
 model1.fit(X, y)
 model2.fit(X, y)
 model3.fit(X, y)
 model4.fit(X, y)
-
+model5.fit(X, y)
 
 X_test, y_test, z_test = load_data(DATA_PATH2)
 #Predict the response for test dataset
@@ -47,6 +48,7 @@ y_pred1 = model1.predict(X_test)
 y_pred2 = model2.predict(X_test)
 y_pred3 = model3.predict(X_test)
 y_pred4 = model4.predict(X_test)
+y_pred5 = model5.predict(X_test)
 #prediction of where_did:
 print("KNN: ")
 for i in range(len(X_test)):
@@ -57,7 +59,10 @@ for i in range(len(X_test)):
 print("\nDecision tree: ")
 for i in range(len(X_test)):
     print(z[y_pred3[i]],end=' ' )
-print("\nSVM: ")
+print("\nSVM rbf: ")
+for i in range(len(X_test)):
+    print(z[y_pred5[i]],end=' ' )
+print("\nSVM linear: ")
 for i in range(len(X_test)):
     print(z[y_pred4[i]],end=' ' )
 print("\nReal chords: ")
