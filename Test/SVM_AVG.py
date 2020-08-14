@@ -24,9 +24,11 @@ def load_data(data_path):
 # get train, validation, test splits
 X, y = load_data(DATA_PATH)
 
-rounds= 100
+rounds= 1000
 Acc_lin_avg=0
 Acc_rbf_avg=0
+err_count_lin=0
+err_count_rbf=0
 
 #LOOP:  
 for i in range(rounds):
@@ -50,8 +52,7 @@ for i in range(rounds):
     Acc_lin_avg+=metrics.accuracy_score(y_test, y_pred_lin)
     Acc_rbf_avg+=metrics.accuracy_score(y_test, y_pred_rbf)
 
-    err_count_lin=0
-    err_count_rbf=0
+
     for i in range(len(y_test)):
         if y_test[i]!=y_pred_rbf[i]:
             err_count_rbf+=1

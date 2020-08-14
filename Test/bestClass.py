@@ -38,8 +38,8 @@ for i in range(rounds):
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25)
 
     #Create Classifiers:
-    knn = KNeighborsClassifier(n_neighbors=5)
-    svclassifier = SVC(kernel='linear')
+    knn = KNeighborsClassifier(n_neighbors=3)
+    svclassifier = SVC(kernel='rbf')
     clf = DecisionTreeClassifier()
     abc = AdaBoostClassifier(n_estimators=200,
                             learning_rate=2)
@@ -52,20 +52,20 @@ for i in range(rounds):
     model = abc.fit(X_train, y_train)
 
     #Predict the response for test dataset
-    y_pred1 = knn.predict(X_test)
-    y_pred2 = svclassifier.predict(X_test)
-    y_pred3 = clf.predict(X_test)
-    y_pred4 = model.predict(X_test)
+    y_pred_knn = knn.predict(X_test)
+    y_pred_svm = svclassifier.predict(X_test)
+    y_pred_dt = clf.predict(X_test)
+    y_pred_ada = model.predict(X_test)
 
-    knn_accu+=metrics.accuracy_score(y_test, y_pred1)
-    dt_accu+=metrics.accuracy_score(y_test, y_pred2)
-    ada_accu+=metrics.accuracy_score(y_test, y_pred3)
-    svm_accu+=metrics.accuracy_score(y_test, y_pred4)
+    knn_accu+=metrics.accuracy_score(y_test, y_pred_knn)
+    svm_accu+=metrics.accuracy_score(y_test, y_pred_svm)
+    ada_accu+=metrics.accuracy_score(y_test, y_pred_ada)
+    dt_accu+=metrics.accuracy_score(y_test, y_pred_dt)
     print(i)
 
 
 print()
 print("knn average accuracy : " , knn_accu/rounds)
+print("SVM average accuracy: " , svm_accu/rounds)
 print("Decision Tree average accuracy: " , dt_accu/rounds)
 print("Adaboost average accuracy: " , ada_accu/rounds)
-print("SVM average accuracy: " , svm_accu/rounds)
