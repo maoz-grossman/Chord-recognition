@@ -82,6 +82,7 @@ And last but not least, the SVM algorithm with ~94 percent accuracy on average.
 <h5> Test - chords recognition of a real song </h5>
 We wanted to test how good our model is on existing songs as well.
 As in the Github repository from which we learned about pcp preprocess, we took the first half minute of Nirvana's song "about a girl" and disassembled it to half second chunks and checked what the model says the chords of the song.
+
 The result:
 
 ![](Test/Screen%20Shot%202020-08-15%20at%2008.46.34.png)
