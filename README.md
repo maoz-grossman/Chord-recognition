@@ -23,6 +23,7 @@ and in particular to his code [pitch_class_profiling.py](https://github.com/amro
 <h4>Data set description </h4>
 guitar chords recorded both in the studio and noisy environments. 
 The database contains 2000 chords splitted up in 10 classes, giving up to 200 chords per chord type. 
+Each sound file is one second to three seconds long.
 The files are stored in raw WAV 16 bits mono 44100Hz format. 
 (from https://people.montefiore.uliege.be/josmalskyj/research.php )
 
@@ -78,5 +79,9 @@ Second place went to the 'Adaboost' algorithm, with an average accuracy of ~95 p
 Not far from it in third place is  'Decision tree', with ~95 percent accuracy on average.
 And last but not least, the SVM algorithm with ~94 percent accuracy on average.
 
+<h5> Test - chords recognition of a real song </h5>
+We wanted to test how good our model is on existing songs as well.
+As in the Github repository from which we learned about pcp preprocess, we took the first half minute of Nirvana's song "about a girl" and disassembled it to half second chunks and checked what the model says the chords of the song.
+The result:
 
-
+You can find the test.py file in the Test folder.
