@@ -86,14 +86,30 @@ in the second place sometimes when there were five neighbors and sometimes a nei
 and in the last place by a (very) small gap when there were seven neighbors.<br>
 results:<br>
 <img src="https://github.com/maoz-grossman/Chord-recognition/blob/chords_recognition_only_ML/images/Errors%20comparsion1.JPG?raw=true" >
+You can find the KNN_AVG.py file in the Test folder.<br>
+We also ran the SVM algorithm in several versions - one run of a linear function, and the other of rbf- radial basis function.<br>
+Here there were larger gaps between the algorithms, out of a run of 1000 times<br>
+it turns out that rbs is about three percent more accurate than linear.<br>
+<img src="https://github.com/maoz-grossman/Chord-recognition/blob/chords_recognition_only_ML/images/Errors%20comparsion2.JPG?raw=true" >
+<br> You can find the SVM_AVG.py file in the Test folder.<br>
+The rest of the algorithm (decision trees and adaboost) we ran only once.<br>
+<h6> 
+Comparison of all algorithms:
+ </h6> 
+We also compared all the different algorithms to see which algorithm is the most accurate.<br>
+We ran all the algorithms about a hundred times, when in knn we chose the number of neighbors to be 3 and in svm the base function to be rbf.
+<br> 
+In first place with a high average of about 97 percent- function basis radial SVM.<br>
+
+In second place with an average not far from that of about 96 percent - neighbors 3 with, KNN <br>
+
+In the third and most respectable place - decision tree , with an average of between 94 and 95 percent accuracy.<br>
+
+And last but not least - Adaboost with an average of 93 to 94 percent accuracy.<br>
+<img src="https://github.com/maoz-grossman/Chord-recognition/blob/chords_recognition_only_ML/images/Errors%20comparsion3.JPG?raw=true" >
+You can find the bestClass.py file in the Test folder.<br>
+
 </p>
-
-
-
-On average the best results we got were from the knn algorithm, with an average accuracy of ~96 percent.
-Second place went to the 'Adaboost' algorithm, with an average accuracy of ~95 percent.
-Not far from it in third place is  'Decision tree', with ~95 percent accuracy on average.
-And last but not least, the SVM algorithm with ~94 percent accuracy on average.
 
 <h5> Test - chords recognition of a real song </h5>
 We wanted to test how good our model is on existing songs as well.
