@@ -85,7 +85,7 @@ In the first place (always) was when the number of neighbors was three,<br>
 in the second place sometimes when there were five neighbors and sometimes a neighbor,<br>
 and in the last place by a (very) small gap when there were seven neighbors.<br>
 results:<br>
-<img src="https://i.ibb.co/fQgN43m/MazeGame.png"  width="519" height="107">
+<img src="https://github.com/maoz-grossman/Chord-recognition/blob/chords_recognition_only_ML/images/Errors%20comparsion1.JPG?raw=true"  width="519" height="107">
 </p>
 
 
