@@ -74,6 +74,17 @@ Often, the twelve pitch spelling attributes are also referred to as chroma and t
 
 
 <h5>results</h5>
+<p>
+In each algorithm we divided the data set into 75% training and 25% testing.<br><br>
+ 
+In the Knn algorithms we ran several versions- one of one neighbor, three, five and seven.<br>
+We ran the algorithm several runs of 100 iterations, and each time we changed the data of the test and train,
+And we checked which number of neighbors gives the best result.<br>
+The results were not too different, all variations gave results around 95 ~ 96 percent accuracy<br>
+
+</p>
+
+
 On average the best results we got were from the knn algorithm, with an average accuracy of ~96 percent.
 Second place went to the 'Adaboost' algorithm, with an average accuracy of ~95 percent.
 Not far from it in third place is  'Decision tree', with ~95 percent accuracy on average.
