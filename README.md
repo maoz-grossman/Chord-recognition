@@ -85,7 +85,7 @@ In the first place (always) was when the number of neighbors was three,<br>
 in the second place sometimes when there were five neighbors and sometimes a neighbor,<br>
 and in the last place by a (very) small gap when there were seven neighbors.<br>
 results:<br>
-<img src="https://github.com/maoz-grossman/Chord-recognition/blob/chords_recognition_only_ML/images/Errors%20comparsion1.JPG?raw=true" >
+<img src="https://github.com/maoz-grossman/Chord-recognition/blob/chords_recognition_only_ML/images/Errors%20comparsion1.JPG?raw=true" ><br>
 You can find the KNN_AVG.py file in the Test folder.<br>
 We also ran the SVM algorithm in several versions - one run of a linear function, and the other of rbf- radial basis function.<br>
 Here there were larger gaps between the algorithms, out of a run of 1000 times<br>
@@ -107,17 +107,25 @@ In the third and most respectable place - decision tree , with an average of bet
 
 And last but not least - Adaboost with an average of 93 to 94 percent accuracy.<br>
 <img src="https://github.com/maoz-grossman/Chord-recognition/blob/chords_recognition_only_ML/images/Errors%20comparsion3.JPG?raw=true" >
+<br>
 You can find the bestClass.py file in the Test folder.<br>
 
 </p>
 
+<p>
 <h5> Test - chords recognition of a real song </h5>
 We wanted to test how good our model is on existing songs as well.
 
-As in the Github repository from which we learned about pcp preprocess, we took the first half minute of Nirvana's song "about a girl" and disassembled it to half second chunks and checked what the model says the chords of the song.
+As in the Github repository from which we learned about pcp preprocess, we took the first half minute of Nirvana's song "about a girl" and disassembled it to half second chunks and checked what the model says the chords of the song.<br>
 
-The result:
+The result:<br>
 
-![](Test/Screen%20Shot%202020-08-15%20at%2008.46.34.png)
-
+<img src="https://github.com/maoz-grossman/Chord-recognition/blob/chords_recognition_only_ML/images/Song%20comparsion.JPG?raw=true" >
+<br>
 You can find the test.py file in the Test folder.
+<br> 
+Because of the large gaps between rbf and linear, we decided to see which is more accurate between the two.<br>
+To our surprise the linear was more correct than the radial, apparently because the cutting of the files was not accurate enough,
+there were sections of a half-second that contained two types of chords, and this is probably what caused the result to be different between the different variations.<br>
+If we had the ability to break a song into sections according to its chords we believe we would have reached 100 percent accuracy.<br>
+</p>
