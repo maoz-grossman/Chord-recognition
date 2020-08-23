@@ -99,29 +99,21 @@ Comparison of all algorithms:
 We also compared all the different algorithms to see which algorithm is the most accurate.<br>
 We ran all the algorithms about a hundred times, when in knn we chose the number of neighbors to be 3 and in svm the base function to be rbf.
 <br> 
-In first place with a high average of about 97 percent- function basis radial SVM.<br>
-
-In second place with an average not far from that of about 96 percent - neighbors 3 with, KNN <br>
-
+In first place with a high average of about 97 percent- radial basis function  SVM.<br>
+In second place with an average not far from that of about 96 percent - KNN, with 3 neighbors <br>
 In the third and most respectable place - decision tree , with an average of between 94 and 95 percent accuracy.<br>
-
 And last but not least - Adaboost with an average of 93 to 94 percent accuracy.<br>
 <img src="https://github.com/maoz-grossman/Chord-recognition/blob/chords_recognition_only_ML/images/Errors%20comparsion3.JPG?raw=true" >
 <br>
 You can find the bestClass.py file in the Test folder.<br>
-
 </p>
 
 <p>
 <h5> Test - chords recognition of a real song </h5>
-We wanted to test how good our model is on existing songs as well.
-
+We wanted to test how good our model is on existing songs as well.<br>
 As in the Github repository from which we learned about pcp preprocess, we took the first half minute of Nirvana's song "about a girl" and disassembled it to half second chunks and checked what the model says the chords of the song.<br>
-
 The result:<br>
-
-<img src="https://github.com/maoz-grossman/Chord-recognition/blob/chords_recognition_only_ML/images/Song%20comparsion.JPG?raw=true" >
-<br>
+<img src="https://github.com/maoz-grossman/Chord-recognition/blob/chords_recognition_only_ML/images/Song%20comparsion.JPG?raw=true" ><br>
 You can find the test.py file in the Test folder.
 <br> 
 Because of the large gaps between rbf and linear, we decided to see which is more accurate between the two.<br>
